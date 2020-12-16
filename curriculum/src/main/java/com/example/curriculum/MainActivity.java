@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
     //获取课程信息方法
     private void sendByPost(String txtUserID, String txtUserPwd, String xn, String xq) {
         //172.16.226.68
-        String Url = "http://172.16.226.68:8080/_war_exploded/servlet.timeTableServlet";
+        String Url = "http://172.16.226.68:8080/servlet.timeTableServlet";
         String path = Url ;
         OkHttpClient client = new OkHttpClient();
 

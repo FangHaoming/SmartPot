@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_monitor">
+
+    <fragment
+        android:id="@+id/navigation_monitor"
+        android:name="com.example.navigate.ui.monitor.MonitorFragment"
+        android:label="@string/title_monitor"
+        tools:layout="@layout/fragment_monitor" />
+
+    <fragment
+        android:id="@+id/navigation_manual"
+        android:name="com.example.navigate.ui.manual.ManualFragment"
+        android:label="@string/title_manual"
+        tools:layout="@layout/fragment_manual" />
+
+    <fragment
+        android:id="@+id/navigation_control"
+        android:name="com.example.navigate.ui.control.ControlFragment"
+        android:label="@string/title_control"
+        tools:layout="@layout/fragment_control" />
+    <fragment
+        android:id="@+id/navigation_mine"
+        android:name="com.example.navigate.ui.mine.MineFragment"
+        android:label="@string/title_mine"
+        tools:layout="@layout/fragment_mine" />
+</navigation>

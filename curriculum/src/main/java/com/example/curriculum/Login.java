@@ -87,7 +87,7 @@ public class Login extends AppCompatActivity {
 
     private void sendByPost(String txtUserID, String txtUserPwd,String xn,String xq) {
         //String requestBody = "I am huangzhihao";
-        String Url = "http://172.16.226.68:8080/_war_exploded/servlet.loginServlet";
+        String Url = "http://172.16.226.68:8080/servlet.loginServlet";
         String path = Url ;
         OkHttpClient client = new OkHttpClient();
         final FormBody formBody = new FormBody.Builder()

@@ -1,0 +1,2 @@
+include ':app', ':SmartPot', ':menu', ':popupmenutest', ':handlemode', ':multichoice', ':2', ':3', ':4', ':menu2', ':navigation', ':try_socket', ':graphic', ':linechart', ':seekbar', ':curriculum', ':test1', ':musicplayer', ':http'
+rootProject.name='My Application11'
