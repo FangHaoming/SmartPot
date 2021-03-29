@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="#ffffff"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="800dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.youth.banner.Banner
+
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/content"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="start" >
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/listview"
+            style="@style/list"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

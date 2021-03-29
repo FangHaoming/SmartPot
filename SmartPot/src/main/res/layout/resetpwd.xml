@@ -16,21 +16,12 @@
         android:ems="10"
         android:id="@+id/resetpwd_edit_name"
         android:layout_alignParentTop="true"
-        android:hint="请输入您的用户名"
+        android:hint="请输入您的用户名（8~20个字符）"
         android:layout_alignLeft="@+id/resetpwd_edit_pwd_new"
         android:layout_alignStart="@+id/resetpwd_edit_pwd_new"
         android:layout_alignRight="@+id/resetpwd_edit_pwd_new"
         android:layout_alignEnd="@+id/resetpwd_edit_pwd_new" />
 
-    <!--
-
-        <EditText android:id="@+id/edt_operator_name" style="@style/syncEditText"
-            android:hint="@string/hint_operator_name" />
-        <ImageView android:id="@+id/syncOperatorImg" style="@style/syncImageView"
-            android:layout_alignLeft="@+id/edt_operator_name"
-            android:layout_alignTop="@+id/edt_operator_name"
-            android:layout_alignBottom="@+id/edt_operator_name" android:src="@drawable/sync_operator" />
-    -->
 
     <EditText
         android:drawableLeft="@android:drawable/ic_lock_idle_lock"
@@ -39,7 +30,7 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/resetpwd_edit_pwd_old"
-        android:hint="请输入您的旧密码"
+        android:hint="请输入您的旧密码（8~20个字符）"
         android:layout_below="@+id/resetpwd_edit_name"
         android:layout_alignRight="@+id/resetpwd_edit_name"
         android:layout_alignEnd="@+id/resetpwd_edit_name"
@@ -53,7 +44,8 @@
         android:id="@+id/resetpwd_btn_cancel"
         android:textSize="20dp"
         android:onClick="not_to_reset"
-        android:background="#f71818"
+        android:background="#B5EE5050"
+        android:textColor="#ffffff"
         android:layout_below="@+id/resetpwd_btn_sure"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -68,7 +60,7 @@
         android:id="@+id/resetpwd_edit_pwd_new"
         android:layout_below="@+id/resetpwd_edit_pwd_old"
         android:layout_centerHorizontal="true"
-        android:hint="请确认您的新密码"
+        android:hint="请确认您的新密码（8~20个字符）"
         />
 
     <Button
@@ -78,7 +70,8 @@
         android:id="@+id/resetpwd_btn_sure"
         android:textSize="20dp"
         android:onClick="sure_to_reset"
-        android:background="#1cf718"
+        android:background="#C64CAF50"
+        android:textColor="#ffffff"
         android:layout_marginTop="92dp"
         android:layout_below="@+id/resetpwd_edit_pwd_new"
         android:layout_alignParentLeft="true"
@@ -91,7 +84,7 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/resetpwd_edit_pwd_check"
-        android:hint="请输入您的新密码"
+        android:hint="请输入您的新密码（8~20个字符）"
         android:layout_below="@+id/resetpwd_edit_pwd_new"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />

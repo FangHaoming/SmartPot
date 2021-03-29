@@ -1,12 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.navigate.MainActivity"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginTop="?attr/actionBarSize"
-    android:layout_marginBottom="54dp">
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="55dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical">
+
+        <CalendarView
+            android:id="@+id/calendarview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/graph_light" />
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="40dp"
+                    android:layout_height="27dp"
+                    android:background="@color/light"></View>
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="光照强度"/>
+            </LinearLayout>
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph_wet"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginVertical="10dp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="40dp"
+                    android:layout_height="27dp"
+                    android:background="@color/wet"></View>
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="土壤湿度"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="刷新" />
+
+            <TextView
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="说明：数据每30分钟更新一次"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

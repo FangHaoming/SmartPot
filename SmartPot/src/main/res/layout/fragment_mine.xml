@@ -1,12 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="?attr/actionBarSize"
     android:orientation="vertical"
-    android:layout_marginBottom="54dp">
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginBottom="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/welcome"
+            android:text="欢迎！"
+            android:textSize="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="输入花盆识别码："/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/device"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/bind"
+            android:text="绑定设备"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/test"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:gravity="bottom">
+            <Button
+                android:layout_marginTop="30dp"
+                android:layout_gravity="bottom|center"
+                android:id="@+id/returnback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EC6D6D"
+                android:onClick="back_to_login"
+                android:text="退出"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
 
 
-</LinearLayout>
+
+</ScrollView>
